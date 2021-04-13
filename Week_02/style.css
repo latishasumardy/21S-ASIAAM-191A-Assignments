@@ -1,0 +1,15 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #c9daf5;
+}
+.main {
+    width: 95%;
+    padding: 1.2rem;
+    margin: 1.1rem;
+    background-color: aqua;
+    border: black;
+}
+
+#map {
+    font-style: italic;
+}
