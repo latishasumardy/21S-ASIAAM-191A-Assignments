@@ -37,21 +37,20 @@ h1 {
     display: flex;
 }
 
-.link {
-    border: tan;
-    background-color: #FFA69E;
-    padding: .2rem;
-}
-
 .active {
-    background-color: #fd867b;
-    color: #5E6472;
+    background-color: #FFA69E;
     padding: .2rem;
     font-weight: bolder;
 }
 
-.link:hover {
+.link {
     background-color: #fd867b;
+    color: #5E6472;
+    padding: .2rem;
+}
+
+.link:hover {
+    background-color: #FFA69E;
 }
 
 .pic-div {
@@ -84,6 +83,8 @@ h1 {
     padding: 0.7rem;
     background-color: #B8F2E6;
     border-radius: 10px;
+    grid-area: map;
+    height: 40vh;
 }
 
 #footer {
