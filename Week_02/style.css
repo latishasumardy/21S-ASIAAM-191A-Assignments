@@ -1,15 +1,72 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #c9daf5;
+    background-color: #FAF3DD;
 }
-.main {
-    width: 95%;
+a {
+    text-decoration: none;
+    color: white;
+}
+.navbar {
+    height: 7rem;
+    width: 15%;
+    margin: 00.5rem;
+    margin-top: 1rem;
+    background-color: #5E6472;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 25px;
+    
+}
+.top {
     padding: 1.2rem;
-    margin: 1.1rem;
-    background-color: aqua;
+    margin: 0.5rem;
+    background-color:#B8F2E6;
     border: black;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #5E6472;
+}
+
+.flex-class {
+    display: flex;
+}
+
+.link {
+    border: tan;
+    background-color: #FFA69E;
+    padding: .2rem;
+}
+
+.active {
+    background-color: #fd867b;
+    color: #5E6472;
+    padding: .2rem;
+    font-weight: bolder;
+}
+
+.link:hover {
+    background-color: #fd867b;
+}
+
+.pic-div {
+    width: 30%;
+}
+
+.profile-pic {
+    width: 70%;
+    border-radius: 5px;
+    border: 5px solid #5E6472;
+    height: auto;
+}
+
+.about {
+    width: 65%;
+    background-color: #AED9E0;
 }
 
 #map {
     font-style: italic;
+    margin: 1.1rem;
 }
