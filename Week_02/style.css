@@ -6,9 +6,13 @@ a {
     text-decoration: none;
     color: white;
 }
+
+h1 {
+    font-size: 50px;
+}
 .navbar {
-    height: 7rem;
-    width: 15%;
+    height: 7.5rem;
+    width: 17%;
     margin: 00.5rem;
     margin-top: 1rem;
     background-color: #5E6472;
@@ -21,7 +25,7 @@ a {
 .top {
     padding: 1.2rem;
     margin: 0.5rem;
-    background-color:#B8F2E6;
+    background-color:#AED9E0;
     border: black;
     text-align: center;
     border-radius: 10px;
@@ -52,21 +56,37 @@ a {
 
 .pic-div {
     width: 30%;
+    margin:auto;
+    text-align: center;
 }
 
 .profile-pic {
-    width: 70%;
+    width: 75%;
     border-radius: 5px;
     border: 5px solid #5E6472;
     height: auto;
+    margin: .5rem;
 }
 
 .about {
     width: 65%;
-    background-color: #AED9E0;
+    background-color: #B8F2E6;
+    border-radius: 10px;
+    padding: 0.7rem;
+    margin: .5rem;
+    overflow: hidden;
 }
 
 #map {
+    width: 90%;
     font-style: italic;
-    margin: 1.1rem;
+    margin: 0.5rem;
+    padding: 0.7rem;
+    background-color: #B8F2E6;
+    border-radius: 10px;
+}
+
+#footer {
+    margin-top: 1.1rem;
+    margin-left: 0.5rem;
 }
