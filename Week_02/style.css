@@ -83,8 +83,10 @@ h1 {
     padding: 0.7rem;
     background-color: #B8F2E6;
     border-radius: 10px;
-    grid-area: map;
-    height: 40vh;
+}
+
+#map1 {
+    
 }
 
 #footer {
