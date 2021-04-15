@@ -57,6 +57,7 @@ h1 {
     width: 30%;
     margin:auto;
     text-align: center;
+    height: auto;
 }
 
 .profile-pic {
@@ -70,6 +71,7 @@ h1 {
 .about {
     width: 65%;
     background-color: #B8F2E6;
+    color: #5E6472;
     border-radius: 10px;
     padding: 0.7rem;
     margin: .5rem;
@@ -78,15 +80,26 @@ h1 {
 
 #map {
     width: 90%;
-    font-style: italic;
     margin: 0.5rem;
     padding: 0.7rem;
     background-color: #B8F2E6;
     border-radius: 10px;
+    color: #5E6472;
 }
 
 #map1 {
+    grid-area: map;
+    height: 20rem;
+    margin: 0.5rem;
+    border-radius: 10px;
     
+}
+
+#map-p1 {
+    grid-area: map;
+    height: 20rem;
+    margin: 0.5rem;
+    border-radius: 10px;
 }
 
 #footer {
