@@ -36,7 +36,7 @@ function addMarker(lat, long, message) {
     return message;
 }
 
-function addMarker2(lat, long, message, color) {
+function addMarker2(lat, long, message, color, img) {
     L.circleMarker([lat, long], {
         "radius": 10,
         "fillColor": color,
@@ -44,13 +44,38 @@ function addMarker2(lat, long, message, color) {
         "weight": 3,
         "opacity": 1,
         "fillOpacity": 0.5
-      }).addTo(map).bindPopup(message);
+      }).addTo(map).bindPopup(`<center>${message.bold()}</center><br>` + img);
       createButtons(lat,long,message,17);
 }
 
+let places = [
+    {'place': "Muracci's Japanese Curry and Grill",
+    'coord': [37.790890, -122.404228],
+    'color': '#000000',
+    'img': '<img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2014/09/Screen-Shot-2014-09-17-at-3.36.40-PM.png?ssl=1"/>'},
+    {'place': "Shaking Crab",
+    'coord': [37.698170, -122.480980],
+    'color': '#f542ce',
+    'img': '<img src="https://d1ralsognjng37.cloudfront.net/458c8225-2b51-4f8a-a01c-4d76239994a8.jpeg"/>'},
+    {'place': "Boba Bliss",
+    'coord': [37.722500, -121.942100],
+    'color': '#ba3e34',
+    'img': '<img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/51/68/6e/strawberry-and-mango.jpg"/>'
+    },
+    {'place': "Teaspoon",
+    'coord': [37.762220, -121.950890],
+    'color': '#ba3e34',
+    'img': '<img src="https://teaspoon-palo-alto.weebly.com/uploads/1/2/3/9/123954192/s166302402559628462_p73_i1_w953.png"/>'
+    },
+    {'place': "Odagada Chicken & Katsu",
+    'coord': [37.704570, -121.875450],
+    'color': '#ba3e34',
+    'img': '<img src="https://www.odagadachicken.com/wp-content/uploads/2018/10/Chicken-Tenders.jpg"/>'
+    },  
+];
+
 createButtons(37.712545, -122.035845,"Reset Zoom", 10);
-addMarker2(37.790890, -122.404228,"Muracci's Japanese Curry and Grill", '#000000');
-addMarker2(37.698170, -122.480980,"Shaking Crab", '#f542ce');
-addMarker2(37.722500, -121.942100,"Boba Bliss", '#ba3e34');
-addMarker2(37.762220, -121.950890,"Teaspoon", '#ba3e34');
-addMarker2(37.704570, -121.875450,"Odagada", '#ba3e34');
+
+for (let i = 0; i < places.length; i++) {
+    addMarker2(places[i].coord[0], places[i].coord[1],places[i].place, places[i].color, places[i].img);
+}
