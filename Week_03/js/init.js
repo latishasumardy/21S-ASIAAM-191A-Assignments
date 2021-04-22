@@ -1,5 +1,5 @@
 let coord = [37.712545, -122.035845];
-let zoom = 9.5;
+let zoom = 11;
 const map = L.map('map').setView(coord, zoom);
 
 L.tileLayer('https://tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png', {
@@ -55,11 +55,11 @@ let places = [
     'img': '<img src="https://i1.wp.com/www.dailycal.org/assets/uploads/2014/09/Screen-Shot-2014-09-17-at-3.36.40-PM.png?ssl=1"/>'},
     {'place': "Shaking Crab",
     'coord': [37.698170, -122.480980],
-    'color': '#3cb44b',
+    'color': '#FF495C',
     'img': '<img src="https://d1ralsognjng37.cloudfront.net/458c8225-2b51-4f8a-a01c-4d76239994a8.jpeg"/>'},
     {'place': "Boba Bliss",
     'coord': [37.722500, -121.942100],
-    'color': '#f58231',
+    'color': '#002642',
     'img': '<img src="https://media-cdn.tripadvisor.com/media/photo-s/1b/51/68/6e/strawberry-and-mango.jpg"/>'
     },
     {'place': "Teaspoon",
@@ -74,7 +74,7 @@ let places = [
     },  
 ];
 
-createButtons(37.712545, -122.035845,"Reset Zoom", 10);
+createButtons(37.712545, -122.035845,"Reset Zoom", 11);
 
 for (let i = 0; i < places.length; i++) {
     addMarker2(places[i].coord[0], places[i].coord[1],places[i].place, places[i].color, places[i].img);
