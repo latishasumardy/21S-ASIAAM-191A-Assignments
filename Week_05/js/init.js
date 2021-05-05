@@ -7,11 +7,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 function addMarker(data){
         // console.log(data)
         // these are the names of our fields in the google sheets:
-        L.marker([data.lat,data.long]).addTo(map).bindPopup(`<h2>${data.timestamp}</h2>`)
+        L.marker([data.lat,data.long]).addTo(map).bindPopup(`<h2>${data.whatisyourname}'s favorite spot</h2>`)
         return data.timestamp
 }
 
-let url = "https://spreadsheets.google.com/feeds/list/1l6dKf1uwa6oTzJ9XKe7rwe9zAXnBEMKK74rFepsKUlQ/om2lo9b/public/values?alt=json"
+let url = "https://spreadsheets.google.com/feeds/list/1xPw3EFo-WLoKFAV4Gj-m6-mHxcCe6B13UzHWdgT-wCs/ol3jcg1/public/values?alt=json"
 
 fetch(url)
 	.then(response => {
